@@ -59,9 +59,8 @@ def save_top_words_to_csv(word_counts, filename):
     print(f"Saved top 50 words to {filename}")
 
 #correct depository path for GitHub  
-tokenized_paths = { 
-    "crawl2": "tokenized_crawl_fr",
-    "crawl3": "tokenized_crawl_de"
+tokenized_paths = {
+    "crawl2": "tokenized_crawl_fr"
 }
 
 #processes each crawl
@@ -76,6 +75,6 @@ for crawl, path in tokenized_paths.items():
     plot_heaps_law(word_counts, crawl)
     
     #saves top 50 words
-    csv_filename = f"./Tokenization/Words{crawl[-1]}.csv"  #saves CSVs in Tokenization folder
+    csv_filename = f"Words{crawl[-1]}.csv"  #saves CSVs in Tokenization folder
     save_top_words_to_csv(word_counts, csv_filename)
     top_csv_files[crawl] = csv_filename
