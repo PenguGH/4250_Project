@@ -9,22 +9,16 @@ nltk.download('punkt')
 
 # Define source folders
 source_folders = {
-    "de": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/tokenized_crawl_de",
-    "en": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/tokenized_crawl_en",
-    "fr": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/tokenized_crawl_fr"
-}
+    "en": r"tokenized_project2_project2_crawl"
+}   
 
 output_folders = {
-    "de": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/stemmed_crawl_de",
-    "en": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/stemmed_crawl_en",
-    "fr": r"C:/Users/wangr/OneDrive/Desktop/Web Reccom/Project1/4250_Project_1/stemmed_crawl_fr"
+    "en": r"stemmed_project2_crawl_en",
 }
 
 # Initialize stemmers
 stemmers = {
-    "de": SnowballStemmer("german"),
-    "en": SnowballStemmer("english"),
-    "fr": SnowballStemmer("french")
+    "en": SnowballStemmer("english")
 }
 
 def process_file(input_file, output_file, language):
@@ -45,6 +39,8 @@ def process_file(input_file, output_file, language):
 # Process all files inside each language folder
 for lang, source_folder in source_folders.items():
     print(f"Processing all files in {source_folder}...")
+
+    os.makedirs(output_folders[lang], exist_ok=True)
 
     for filename in os.listdir(source_folder):  # Loop through each text file
         if filename.endswith(".txt"):  # Process only .txt files
