@@ -12,8 +12,10 @@ def is_valid_domain(url, allowed_domains):
 
 # Function to check if a page is in the desired language
 def is_valid_language(soup, target_language):
-    lang = soup.html.get("lang", "").lower()
-    return lang == target_language
+    if soup.html and soup.html.get("lang"):
+        lang = soup.html.get("lang", "").lower()
+        return lang == target_language
+    return False
 
 # Function to get outlinks from a page
 def get_outlinks(soup, base_url):
@@ -83,10 +85,11 @@ def crawl(seed_urls, allowed_domains, target_language, crawl_name, max_pages=500
 # Testing the web crawler
 if __name__ == "__main__":
     # Defining seed URLs for different languages
-    seed_urls_en = ["https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"]
+    #  seed_urls_en = ["https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"]
+    seed_urls_en = ["https://www.cpp.edu"]
 
     # Allowed domains
-    allowed_domains = ["https://en.wikipedia.org/wiki/Los_Angeles_Dodgers"]
+    allowed_domains = ["https://www.cpp.edu"]
     
     # Crawl for the different languages
     for language, seed_urls in zip(["en"], [seed_urls_en]):
