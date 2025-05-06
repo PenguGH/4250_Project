@@ -9,15 +9,28 @@ def load_links_from_reports(report_files):
     all_pages = set()
 
     for file in report_files:
-        data = pd.read_csv(file)
+        print(f"Reading file: {file}")
+        try:
+            #reads CSV w/ quoted fields and line skipping
+            data = pd.read_csv(file, quotechar='"', on_bad_lines='skip')
+        except Exception as e:
+            print(f"Error reading {file}: {e}")
+            continue
 
         for _, row in data.iterrows():
-            source = row['URL']
+            source = row.get('URL', '')
             try:
-                #reads the list of outlinks stored as string in CSV
-                outlinks = ast.literal_eval(row['Outlinks']) if 'Outlinks' in row else []
+                #reads  list of outlinks stored as string in CSV
+                outlinks_raw = row.get('Outlinks', '[]')
+                outlinks = ast.literal_eval(outlinks_raw)
+                if not isinstance(outlinks, list):
+                    outlinks = []
             except:
                 outlinks = []
+
+            #shows what's being parsed
+            print(f"SOURCE: {source}")
+            print(f"OUTLINKS: {outlinks}")
 
             links[source] = outlinks
             all_pages.add(source)
@@ -29,6 +42,11 @@ def load_links_from_reports(report_files):
 #calculates PageRank using power iteration
 def calculate_pagerank(links, pages, damping=0.85, max_steps=100, threshold=1e-6):
     total_pages = len(pages)
+
+    if total_pages == 0:
+        print("Error: No pages found. Check your input files or parsing logic.")
+        return {}
+
     page_to_index = {page: i for i, page in enumerate(pages)}
     index_to_page = {i: page for i, page in enumerate(pages)}
 
@@ -75,16 +93,24 @@ def get_top_100_pages(pagerank_scores):
 
 #main program
 def main():
-    #list your report files here
-    report_files = report_files = [
-    "report_project2_crawl_en.csv"
-]
+    #lists report files
+    report_files = [
+        "report_project2_crawl_en.csv"
+    ]
 
     print("Reading crawl data...")
     link_graph, all_pages = load_links_from_reports(report_files)
 
+    if not all_pages:
+        print("No pages were loaded. Exiting.")
+        return
+
     print("Calculating PageRank...")
     pageranks = calculate_pagerank(link_graph, all_pages)
+
+    if not pageranks:
+        print("PageRank calculation failed.")
+        return
 
     print("Top 100 Pages by PageRank:")
     top_pages = get_top_100_pages(pageranks)
