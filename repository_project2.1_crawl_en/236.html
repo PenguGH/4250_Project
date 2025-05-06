@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<title>
+			Making Swift Work of the Competition
+		</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+		<meta content="Advancement" property="cludo:category"/>
+<meta content="2024-07-17T18:07Z" property="date"/>
+<link href="https://www.cpp.edu/cppmag/crafting-the-flavors-of-california/making-swift-work-of-the-competition.shtml" rel="canonical"/>
+		
+		
+		
+    <div lang="en">
+
+
+                
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                <script src="https://cdn.levelaccess.net/accessjs/YW1wX2NwcDExMDM/access.js"></script>
+<script>// <![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PSKJRNV');
+// ]]></script>
+<link href="/common/green-and-gold/assets/icons/gg-favicon.svg" rel="icon" type="image/svg+xml"/> <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="defer" integrity="sha384-FW78RPcSpi13vjx77nPWQIrQbNSLkPBopb0qGzLCxD2x4Kr6FA8V05C/6cpgkKPL" src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"></script>
+<link href="https://www.cpp.edu/common/2018/assets/css/cpp-base-styles.css" rel="stylesheet"/> <link href="https://www.cpp.edu/common/2018/assets/css/cpp-extended-styles.css" rel="stylesheet"/> <link href="https://use.typekit.net/fia5dle.css" rel="stylesheet"/> <link href="/common/green-and-gold/assets/css/cpp-fonts.css" rel="stylesheet"/> <link href="/common/green-and-gold/assets/css/gg-header-footer.css" rel="stylesheet"/>
+
+</div>
+    
+		
+		
+	</head>
+	<body>
+		
+		 
+<header class="nav fixed">
+    <nav class="container">
+        <ul class="row nav__main" id="mainNavMenu">
+            <li id="main-logo" class="col-6 col-lg-3 nav__logo">
+                <a href="/" aria-label="Cal Poly Pomona Home" tabindex="0">
+                    <div class="nav__logo--horizontal">
+                        <img src="/common/green-and-gold/assets/logos/cpp_horizontal_2c_green_rgb.png" alt="Cal Poly Pomona Logo" />
+                    </div>
+                </a>
+            </li>
+            <li class="nav__links col-6" id="head-links">
+             <a class="nav__link nav__link--desktop col-1" href="/commencement/" tabindex="0">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="
+    position: relative;
+    height: 25px;
+    top: 6px;
+    width: auto;
+">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path d="M622.3 153.2L343.4 67.5c-15.2-4.7-31.6-4.7-46.8 0L17.7 153.2c-23.5 7.2-23.5 38.4 0 45.6l48.6 14.9c-10.7 13.2-17.2 29.3-17.9 46.9C38.8 266.2 32 276.1 32 288c0 10.8 5.7 19.9 13.9 25.7L20.3 428.5C18.1 438.5 25.7 448 35.9 448h56.1c10.2 0 17.8-9.5 15.6-19.5L82.1 313.7C90.3 307.9 96 298.8 96 288c0-11.6-6.5-21.3-15.7-26.9 .8-15 8.4-28.3 20.7-36.7L296.6 284.5c9.1 2.8 26.4 6.3 46.8 0l279-85.7c23.6-7.2 23.6-38.4 0-45.6zM352.8 315.1c-28.5 8.8-52.8 3.9-65.6 0l-145-44.6L128 384c0 35.4 86 64 192 64s192-28.7 192-64l-14.2-113.5-145 44.6z"
+fill="#005030"></path>
+                    </svg>
+                    <span class="sr-only">commencement</span>
+                </a>
+                <a class="nav__link nav__link--desktop" href="/apply/" tabindex="0">apply</a>
+                <a class="nav__link nav__link--desktop" href="/outreach/tours.shtml" tabindex="0">visit</a>
+                <a class="nav__link nav__link--desktop" href="https://engage.cpp.edu/register/ask_us_a_question" tabindex="0">info</a>
+                <a class="nav__link nav__link--desktop" href="/giving/" tabindex="0">give</a>
+                <a class="nav__link nav__link--desktop" href="https://my.cpp.edu" tabindex="0">mycpp</a>
+                <button id="search-open" class="nav__search" aria-expanded="false" tabindex="0">
+                    <img src="/common/green-and-gold/assets/icons/nav/search-dark-green.svg" alt="Search" />
+                </button>
+                <button class="nav__menu" id="menuButton" aria-expanded="false" tabindex="0">
+                    <img src="/common/green-and-gold/assets/icons/nav/menu.svg" alt="menu" />
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+<header id="search-header" style="display:none">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div id="searchbox" class="col-md-6">
+            <div id="search-slide">
+                <label for="#gsc-i-id1" class="sr-only">Search</label>
+                <script async="" src="https://cse.google.com/cse.js?cx=007035455219528863532:fcaogmpwbtt"></script>
+                <div class="gcse-searchbox-only" data-resultsurl="https://www.cpp.edu/search.shtml"></div>
+                <button class="nav__menu col-1" id="search-close" aria-expanded="false" tabindex="0" aria-label="Menu icon">
+                    <img src="/common/green-and-gold/assets/icons/nav/close.svg" alt="Close icon">
+                    </button>
+                </div>
+            </div>
+            <script async="" src="https://cse.google.com/cse.js?cx=007035455219528863532:fcaogmpwbtt"></script>
+            <style>
+
+     .gstl_50 gssb_c {
+         position:fixed !important;
+         }
+       #search-close img {
+         width: auto !important;
+       }
+
+       #searchbox {
+         height: 93px;
+         overflow: hidden;
+       }
+
+       #search-header {
+         position: fixed;
+         height: 100px;
+         width: 100%;
+         height: 93px;
+         z-index: 99999;
+         top: 0;
+       }
+
+       #gsc-i-id1 {
+         height: 40px;
+         width: 70%;
+         border-radius: 4px;
+         border: none;
+         padding: 15px;
+       }
+
+       #search-submit {
+         margin: 15px;
+       }
+
+       #search-close {
+         width: 23px;
+         height: 21px;
+         position: absolute;
+         top: 32px;
+       }
+
+       #search-slide {
+         width: 0px;
+         right: -100%;
+         padding: 20px 15px;
+         position: relative;
+         background: #005030;
+         height: 100%;
+         transition: all .5s ease 0s
+       }
+
+       #search-slide.slideup {
+         right: 0;
+         width: 100%;
+         position: relative;
+       }
+
+       @media screen and (max-width:991px) {
+         #search-slide {
+           height: 77px !important;
+           padding: 12px 10px;
+         }
+       }
+
+       @media screen and (max-width:767px) {
+         #search-header {
+           position: relative !important;
+         }
+
+         #search-slide {
+           text-align: center !important;
+         }
+       }
+
+     .gsc-search-button-v2 svg {
+    width: auto;
+    height: 25px;
+    position: relative;
+    top: 8px;
+}
+
+       .gsc-search-button-v2,
+       .gsc-search-button-v2:hover,
+       .gsc-search-button-v2:focus {
+         border: none !important;
+         background: none !important;
+       }
+
+       form.gsc-search-box {
+         font-size: 13px;
+         margin-top: 0;
+         margin-right: 0;
+         margin-bottom: 4px;
+         margin-left: 0;
+         width: 100%;
+         display: inline-block;
+       }
+
+       #___gcse_0 {
+         width: 70%;
+         display: inline-block;
+       }
+
+       table.gsc-search-box td.gsc-input {
+         padding-right: 0;
+       }
+
+       #gsc-i-id1 {
+         width: 100%;
+         padding: 0px;
+         border: none;
+         margin: -0.0625em 0px 0px;
+         height: 40px !important;
+         background: rgb(255, 255, 255);
+         outline: none;
+         font-size: 20px;
+         font-weight: 200;
+       }
+
+       .gstl_50.gssb_c {
+         z-index: 99999;
+       }
+
+       .gsq_a {
+         font-weight: 200;
+         font-size: 18px;
+         padding: 2px;
+       }
+
+       .gssb_a img {
+         display: none;
+       }
+
+       .side-nav__links--small-bottom {
+           margin-left:-15px;
+       }
+       .nav__links .nav__links--mobile {
+           margin-top: 50px;
+            margin-bottom: -50px;
+            margin-left: 50px
+       }
+       .nav__link--mobile {
+        	padding:0px;
+        }
+     /*   .side-nav__container, .side-nav__container--small {
+          
+            padding-left: 50px;
+        }*/
+        .side-nav__container--small-bottom {
+           padding-left: 35px;
+        }
+         @media screen and (max-width:991px) {
+             .nav__links--mobile {
+                 display:flex;
+             }
+         }
+          @media screen and (min-width:992px) {
+             .nav__links--mobile {
+                 display:none !important;
+             }
+          }
+         .nav__link--mobile {
+             color: #ffb81c;
+         }
+       </style>
+        </div>
+    </header>
+    <section class="side-nav" id="sideNavOverlay">
+        <header class="side-nav__overlay relative">
+            <nav class="container">
+                <ul class="row nav__overlay" id="sideNavMenu">
+                    <li class="nav__logo col-12 col-md-10 col-lg-3" id="navLogoOverlay">
+                        <a href="/" aria-label="Cal Poly Pomona Home" tabindex="-1">
+                            <img src="/common/green-and-gold/assets/logos/cpp_horizontal_1c_gold_rgb.png" alt="Cal Poly Pomona Logo" />
+                        </a>
+                    </li>
+                    <div class="nav__overlay--right col-12 col-lg-9">
+                        <li class="nav__links nav__links--desktop col-12 col-lg-6">
+                             <a class="nav__link nav__link--mobile col-1" href="/commencement/" tabindex="-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="
+    position: relative;
+    height: 25px;
+    top: 6px;
+    width: auto;
+">
+                                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path d="M622.3 153.2L343.4 67.5c-15.2-4.7-31.6-4.7-46.8 0L17.7 153.2c-23.5 7.2-23.5 38.4 0 45.6l48.6 14.9c-10.7 13.2-17.2 29.3-17.9 46.9C38.8 266.2 32 276.1 32 288c0 10.8 5.7 19.9 13.9 25.7L20.3 428.5C18.1 438.5 25.7 448 35.9 448h56.1c10.2 0 17.8-9.5 15.6-19.5L82.1 313.7C90.3 307.9 96 298.8 96 288c0-11.6-6.5-21.3-15.7-26.9 .8-15 8.4-28.3 20.7-36.7L296.6 284.5c9.1 2.8 26.4 6.3 46.8 0l279-85.7c23.6-7.2 23.6-38.4 0-45.6zM352.8 315.1c-28.5 8.8-52.8 3.9-65.6 0l-145-44.6L128 384c0 35.4 86 64 192 64s192-28.7 192-64l-14.2-113.5-145 44.6z"
+fill="#ffb81c"></path>
+                                </svg>
+                                <span class="sr-only">Commencement</span>
+                            </a>
+                            <a class="nav__link nav__link--mobile" href="/apply/" tabindex="-1">apply</a>
+                            <a class="nav__link nav__link--mobile" href="/outreach/tours.shtml" tabindex="-1">visit</a>
+                            <a class="nav__link nav__link--mobile" href="https://engage.cpp.edu/register/ask_us_a_question" tabindex="-1">info</a>
+                            <a class="nav__link nav__link--mobile" href="/giving/" tabindex="-1">give</a>
+                            <a class="nav__link nav__link--mobile" href="https://my.cpp.edu" tabindex="-1">mycpp</a>
+                        </li>
+                        <li class="nav__icons">
+                            <button id="search-open-green" class="nav__search" aria-expanded="false" tabindex="-1">
+                                <img src="/common/green-and-gold/assets/icons/nav/search-white.svg" alt="Search" />
+                            </button>
+                            <button class="nav__close" id="closeButton" tabindex="-1">
+                                <img src="/common/green-and-gold/assets/icons/nav/close.svg" alt="Close menu" />
+                            </button>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
+            <div class="mobile_overlay_nav nav__links nav__links--mobile col-12 col-lg-6">
+                 <a class="nav__link nav__link--mobile col-1" href="/commencement/" tabindex="-1">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="
+    position: relative;
+    height: 25px;
+    top: 6px;
+    width: auto;
+">
+                                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path d="M622.3 153.2L343.4 67.5c-15.2-4.7-31.6-4.7-46.8 0L17.7 153.2c-23.5 7.2-23.5 38.4 0 45.6l48.6 14.9c-10.7 13.2-17.2 29.3-17.9 46.9C38.8 266.2 32 276.1 32 288c0 10.8 5.7 19.9 13.9 25.7L20.3 428.5C18.1 438.5 25.7 448 35.9 448h56.1c10.2 0 17.8-9.5 15.6-19.5L82.1 313.7C90.3 307.9 96 298.8 96 288c0-11.6-6.5-21.3-15.7-26.9 .8-15 8.4-28.3 20.7-36.7L296.6 284.5c9.1 2.8 26.4 6.3 46.8 0l279-85.7c23.6-7.2 23.6-38.4 0-45.6zM352.8 315.1c-28.5 8.8-52.8 3.9-65.6 0l-145-44.6L128 384c0 35.4 86 64 192 64s192-28.7 192-64l-14.2-113.5-145 44.6z"
+fill="#ffb81c"></path>
+                                </svg>
+                                <span class="sr-only">Commencement</span>
+                            </a>
+                <a class="nav__link nav__link--mobile" href="/apply/" tabindex="0">apply </a>
+                <a class="nav__link nav__link--mobile" href="/outreach/tours.shtml" tabindex="0">visit </a>
+                <a class="nav__link nav__link--mobile" href="https://engage.cpp.edu/register/ask_us_a_question" tabindex="0">info </a>
+                <a class="nav__link nav__link--mobile" href="/giving/" tabindex="0">give </a>
+                <a class="nav__link nav__link--mobile" href="https://my.cpp.edu" tabindex="0">mycpp </a>
+            </div>
+       
+        <nav class="container side-nav__container">
+            <ul class="row side-nav__links">
+                <li id="home-button" class="side-nav__link">
+                    <a class="h3__proxima" href="/" tabindex="-1" aria-label="Cal Poly Pomona Home page">Home</a>
+                </li>
+                <li class="side-nav__item" id="sideNavItem--0">
+                    <button class="h3__proxima" id="0" aria-expanded="false" tabindex="-1" aria-label="Link">
+                        <span>about</span>
+                        <span class="side-nav__item--plus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.25 0V34.5M17.25 0V34.5" stroke="#A4D65E" stroke-width="3" />
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                        <span class="side-nav__item--minus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="side-nav__item" id="sideNavItem--1">
+                    <button class="h3__proxima" id="1" aria-expanded="false" tabindex="-1" aria-label="Admissions & Aid">
+                        <span>admissions &amp; aid</span>
+                        <span class="side-nav__item--plus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.25 0V34.5M17.25 0V34.5" stroke="#A4D65E" stroke-width="3" />
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                        <span class="side-nav__item--minus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="side-nav__item" id="sideNavItem--2">
+                    <button class="h3__proxima" id="2" aria-expanded="false" tabindex="-1" aria-label="academics">
+                        <span>academics</span>
+                        <span class="side-nav__item--plus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.25 0V34.5M17.25 0V34.5" stroke="#A4D65E" stroke-width="3" />
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                        <span class="side-nav__item--minus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="side-nav__item" id="sideNavItem--3">
+                    <button class="h3__proxima" id="3" aria-expanded="false" tabindex="-1" aria-label="life at CPP">
+                        <span>life at CPP</span>
+                        <span class="side-nav__item--plus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.25 0V34.5M17.25 0V34.5" stroke="#A4D65E" stroke-width="3" />
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                        <span class="side-nav__item--minus">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 17.25L34.5 17.25M0 17.25L34.5 17.25" stroke="#A4D65E" stroke-width="3" />
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <nav class="container side-nav__container--small">
+            <ul class="row">
+                <li class="side-nav__link--small col-12 col-lg-6">
+                    <a class="h6__proxima" href="https://broncoathletics.com/" tabindex="-1">athletics</a>
+                </li>
+                <li class="side-nav__link--small col-12 col-lg-6">
+                    <a class="h6__proxima" href="/alumni/" tabindex="-1">alumni</a>
+                </li>
+                <li class="side-nav__link--small col-12 col-lg-6">
+                    <a class="h6__proxima" href="/news/" tabindex="-1">news &amp; events</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="container side-nav__container--small-bottom">
+            <ul class="col-12 col-lg-7 side-nav__links--small-bottom">
+                <li class="side-nav__link--small-bottom">
+                    <a class="body2" href="/prospective-student-gateway/" tabindex="-1">future students</a>
+                    <span class="divider">|</span>
+                </li>
+                <li class="side-nav__link--small-bottom">
+                    <a class="body2" href="/student-gateway/" tabindex="-1">current students</a>
+                    <span class="divider">|</span>
+                </li>
+                <li class="side-nav__link--small-bottom">
+                    <a class="body2" href="/family/" tabindex="-1">families</a>
+                    <span class="divider">|</span>
+                </li>
+                <li class="side-nav__link--small-bottom">
+                    <a class="body2" href="/faculty-staff-gateway/" tabindex="-1">faculty &amp; staff</a>
+                </li>
+            </ul>
+            <ul class="col-12 col-lg-5 social-icons">
+                <li class="side-nav__icon--small-bottom">
+                    <a href="https://www.instagram.com/calpolypomona/" aria-label="Instagram" tabindex="-1">
+                        <img src="/common/green-and-gold/assets/icons/social/insta.svg" alt="Instagram" />
+                    </a>
+                </li>
+                <li class="side-nav__icon--small-bottom">
+                    <a href="https://www.linkedin.com/school/cal-poly-pomona/" aria-label="LinkedIn " tabindex="-1">
+                        <img src="/common/green-and-gold/assets/icons/social/li.svg" alt="LinkedIn" />
+                    </a>
+                </li>
+                <li class="side-nav__icon--small-bottom">
+                    <a href="https://www.youtube.com/user/calpolypomona" aria-label="Youtube " tabindex="-1">
+                        <img src="/common/green-and-gold/assets/icons/social/yt.svg" alt="Youtube" />
+                    </a>
+                </li>
+                <li class="side-nav__icon--small-bottom">
+                    <a href="https://www.facebook.com/calpolypomona" aria-label="Facebook " tabindex="-1">
+                        <img src="/common/green-and-gold/assets/icons/social/fb.svg" alt="Facebook" />
+                    </a>
+                </li>
+                <li class="side-nav__icon--small-bottom">
+                    <a href="https://twitter.com/calpolypomona" aria-label="X (Twitter)" tabindex="-1">
+                        <img src="/common/green-and-gold/assets/icons/social/x.svg" alt="X" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+		                                                                                                                                                        																										                                                            															    		                                
+
+
+            
+
+    <header title="CPP Magazine">
+
+
+
+      
+        
+    <custom/> 
+
+                <section id="jumbotron">
+        <img alt="Making Swift Work of the Competition" src="../img/24cpp-mag-spring-swift-compteition-banner.gif"/>
+    </section>
+        
+                         <div id="dept-title">
+                            CPP Magazine
+                    </div>
+    </header>
+
+                 
+    
+
+
+    <main class="container-fluid flex-grow">
+
+            <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+            <nav class="navbar navbar-expand-md navbar-light">
+        
+
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarSupportedContent" data-toggle="collapse" id="site-menu-expand-button" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">   
+            <ul class="nav nav-pills left-nav" id="site-nav">
+                                <li id="li-1">
+                    <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/index.shtml">Home</a>    
+                </li>
+                
+                                                                                                                                    
+                    
+                    
+                                                
+                                                    
+                            <li id="li-2">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/thats-socalpoly.shtml">
+                                                                            That's SoCalPoly
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-3">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/broncos-at-work.shtml">
+                                                                            Broncos at Work
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-4">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/expert-q-and-a.shtml">
+                                                                            Expert Q&amp;A
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-5">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/presidents-message.shtml">
+                                                                            President's Message
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                                                                                        
+                                                                                                                <li class="nav-item collapsed" id="li-6">
+                                    <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/california-tastemakers/index.shtml">California Tastemakers</a>    
+                                </li>
+                                                                                                        
+                                                                                                                                        
+                    
+                    
+                                                
+                                                    
+                            <li id="li-7">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/blueprints-and-barbells.shtml">
+                                                                            Blueprints and Barbells
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-8">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/making-swift-work-of-the-competition.shtml">
+                                                                            Making Swift Work of the Competition
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-9">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/license-to-clean.shtml">
+                                                                            License to Clean
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-10">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/in-memoriam-bob-suzuki.shtml">
+                                                                            In Memoriam: Bob Suzuki
+                                                                    </a>    
+                            </li>
+                                                                                                                                                                                              
+                    
+                    
+                                                
+                                                    
+                            <li id="li-11">
+                                <a class="nav-link" data-parent="#site-nav" href="/cppmag/crafting-the-flavors-of-california/past-issues.shtml">
+                                                                            Past Issues
+                                                                    </a>    
+                            </li>
+                                                                                                      </ul>
+        </div>
+    </nav>
+        </div>
+                        <div class="col-12 col-md-8 col-lg-6" id="main">
+                                      <h1 class="cpp-h1">Making Swift Work of the Competition</h1>
+            
+
+
+    
+                                            
+                                    <section class="text-images" id="s0">
+                                
+                                                        
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                            <p>By Michael Landers</p>
+<p><img alt="Cyber Security Degree Loading Tshirt" class="image-left-medium" height="400" src="../img/23cyber-security-fair-shirt.gif" width="600"/>By the end of 2024, the cost of cyberattacks on the global economy could surpass $10.5 trillion, according to Forbes Magazine. Industries such as finance and hospitality have grappled with these crimes, and cyberattacks are also impacting supply chain management, local cities and school districts. Cybercrime Magazine reports that &#8220;60 percent of small companies go out of business within six months of falling victim to a data breach or cyberattack,&#8221; so it&#8217;s no wonder that cybersecurity is one of the top concerns in the global business sector and geopolitical landscape.</p>
+<p>Through competitions, research opportunities and faculty leadership, Cal Poly Pomona is preparing students to meet the increasing demands of this crucial industry. The university is entering its third decade of designation as a <strong>Center of Academic Excellence in Cyber Defense</strong> by the National Security Agency, Department of Homeland Security and Central Security Service.</p>
+<p>In addition, the university&#8217;s programs reach out to high school students, creating a much-needed pipeline to college and industry.</p>
+<p>&#8220;Cyber is a STEM (Science, Technology, Engineering and Math) field and there are great opportunities for employment in technical, non-technical or mixed environments. Cal Poly Pomona cybersecurity students mentor each other, train every weekend, and are often recruited by major firms and government agencies while they&#8217;re still in school. Many have high-paying jobs waiting for them after graduation,&#8221; says <strong>Ron Pike</strong>, director of the <a href="https://www.cpp.edu/cba/information-assurance/index.shtml"><strong>California Center for Cyber Risk</strong></a> and professor of <a href="https://www.cpp.edu/cba/computer-information-systems/index.shtml">computer information systems</a>.</p>
+<h2>Ahead of the Competition</h2>
+<p><img alt="Lindsey Lam tries her hand at Mincraft at the Artificial Intelligence Fair at Cal Poly Pomona April 17, 2024." class="image-right-medium" height="544" src="../img/24cyber-fair-lindsey-lam.gif" width="600"/>Pike and <strong>Curtis Carpenter</strong>, adjunct faculty member and interim director of advanced computing, have expanded learning opportunities to include competitions, research, club activities, and networking with corporate partners, alumni, and peers. Students in the <a href="https://www.cpp.edu/cba/index.shtml">College of Business Administration</a>, <a href="https://www.cpp.edu/engineering/index.shtml">College of Engineering</a> and <a href="https://www.cpp.edu/sci/index.shtml">College of Science</a> have benefited from the polytechnic experiences.</p>
+<p>Programs like these continue to grow, thanks in part to a generous $12.5 million donation from Distinguished Alumni <strong><a href="https://www.cpp.edu/cppmag/the-gift-of-innovation/the-gift-of-innovation.shtml">David Singelyn</a></strong> (&#8217;84, computer information systems and accounting) and <strong>Ruth Singelyn</strong> (&#8217;84, computer information systems) to the <a href="https://www.cpp.edu/cba/graduate-business-programs/index.shtml">Singelyn Graduate School of Business</a>. In addition, <strong>Kathy Tully</strong>, also a Distinguished Alumna (&#8217;80, MBA) and one of Barron&#8217;s Top 100 Women Financial Advisors, sponsored students&#8217; travel to the competitions.</p>
+<p>At national and international competitions, student teams implement the skills they learn in the classroom. Depending on the competition challenge, they may act as the aggressor, exploiting system weaknesses and mining data from organizations. Other times, they wear the white hats and try to identify and fend off cyberattacks. One competition challenge saw the Cal Poly Pomona team protecting sensitive customer and vendor information in the hacking of a fictitious bank merger, while another challenge saw the teams identifying system vulnerabilities and technical improvements to the executives of a fictitious hotel company.</p>
+<p>CPP won first place at the <a href="https://www.cpp.edu/news/content/2023/01/cpps-cybersecurity-team-learns-by-preparing/index.shtml">2023 Collegiate Penetration Testing Competition</a> and second at the 2023 National Collegiate Cyber Defense Competition (CCDC).</p>
+<p>&#8220;The hands-on experience you get from a competition like CCDC is not something you get in the classroom,&#8221; says <strong>Karina</strong> <strong>Rivera,</strong> a CIS senior. &#8220;We learn to work under pressure, solve complex problems, and collaborate with others in a stressful time-constrained environment.&#8221;</p>
+<h2>From Competitions to Community</h2>
+<p><img alt="Dr. Laura Pohopien speaks  at the Artificial Intelligence Fair at Cal Poly Pomona April 17, 2024." class="image-left-medium" height="551" src="../img/24cyber-fair-laura-pohopien.gif" width="600"/>Part of the university&#8217;s success in cyber competitions is rooted in a supportive community within campus clubs and outreach activities.</p>
+<p>&#8220;I didn&#8217;t know I wanted to pursue cybersecurity until my second year of college. I was looking for clubs to be involved in on campus, and I came across SWIFT, one of the largest cybersecurity clubs at CPP,&#8221; Rivera says. &#8220;As I became more involved, my passion for it only grew more, and I knew I wanted to pursue this as my career.&#8221;</p>
+<p>Rivera is now a cyber defense analyst at <strong>Avanade</strong> and she is one of the many trainers to CPP and high school students through <a href="https://www.cpp.edu/cba/information-assurance/people/student-clubs.shtml"><strong>SWIFT</strong></a> (Students with an Interest in the Future of Technology), a premier cyber club on campus that develops and trains cyber teams for regional, national and global competitions.</p>
+<p>Many SWIFT members also volunteer for CPP&#8217;s <strong><a href="https://www.cpp.edu/cba/information-assurance/people/student-clubs.shtml">CyberPatriot</a></strong> program, which aims to create a clear pathway for middle and high school students to learn about cybersecurity, participate in competitions, go to college, graduate, and immediately find jobs in industry and government. Workshops and summer bootcamps at schools in the San Gabriel Valley and Inland Empire encourage kids to explore cybersecurity and related career paths. This effort has proven successful in drawing participation from students of all backgrounds and has spurred growing diversity among the cyber teams at Cal Poly Pomona.</p>
+<p>CyberPatriot is a national program that alumna <strong>Diane Miller</strong> (&#8217;81, information systems) led when she was the director of Global Cyber Education and Workforce Development at <strong>Northrop Grumman</strong>. Miller has been actively engaged with Cal Poly Pomona&#8217;s cybersecurity program for decades, supporting creation of the student-run cyber operations center, speaking to students about cyber careers, launching the collaboration with CyberPatriot, and representing Cal Poly Pomona cyber as the Executive-in- Residence for Cybersecurity.</p>
+<p>&#8220;It&#8217;s an honor to collaborate with the brilliant cyber students at Cal Poly Pomona, especially as I&#8217;ve seen them drawn into the field through CyberPatriot.&#8221; Miller says.</p>
+<p>That&#8217;s certainly the case for recent graduate <strong>Gabriel Fok</strong>, who started his cyber journey in high school and now works as an information systems security engineer at <strong>Boeing</strong>.</p>
+<p>&#8220;I first learned about cybersecurity in high school through CyberPatriot,&#8221; says Fok (&#8217;23, computer science). &#8220;While the technical aspect brought me, I&#8217;ve stayed for the community. Ever since my second year of high school, I&#8217;ve been teaching others who stood where I once stood, and now I am coming up on my seventh year of mentoring in cybersecurity &#8212; and I still don&#8216;t see any sign of stopping.&#8221;</p>
+<p><img alt="Cyber Team works in the lab on their laptops" class="" height="705" src="../img/24cyber-team.gif" width="1504"/></p>
+            </section>
+                            
+                  
+       
+	
+	
+ 
+         
+    
+
+    
+                    
+                  
+        
+                 
+                          
+                     
+                          
+                     
+                          
+                     
+                          
+                 
+    	
+            
+                       <section aria-labelledby="qa-h2-1" class="mt-4">
+        <h2 id="qa-h2-1">Competition Highlights</h2>
+                        <div class="accordion" id="accordion-1">
+        
+                                                                                    <div class="w-100 text-right">
+                                              <button aria-controls=" collapsed1-1 collapsed1-2 collapsed1-3 collapsed1-4" aria-expanded="false" class="btn btn-primary mb-2" data-target=".multi-collapse1" data-toggle="collapse" type="button">Expand/Collapse All <span class="sr-only">Competition Highlights</span></button>
+            </div>
+                                    
+                                
+                                
+                        <div class="card">
+            <div class="card-header" id="heading1">
+                <h3 class="m-0">
+                    <button aria-controls="collapse1-1" aria-expanded="false" class="btn btn-link" data-target="#collapse1-1" data-toggle="collapse">
+                              
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                  1st Place
+                    </button>
+                </h3>
+            </div>
+                            <div aria-labelledby="heading1" class="collapse multi-collapse1 " id="collapse1-1">
+                          <div class="card-body">
+
+                                            
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                2022 and 2023 Colegiate Penetration Testing Competition (CPTC)
+                                
+              </div>
+            </div>
+        </div>
+                        
+                                                            
+                            
+                                
+                                
+                        <div class="card">
+            <div class="card-header" id="heading2">
+                <h3 class="m-0">
+                    <button aria-controls="collapse1-2" aria-expanded="false" class="btn btn-link" data-target="#collapse1-2" data-toggle="collapse">
+                              
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                  Highest Score
+                    </button>
+                </h3>
+            </div>
+                            <div aria-labelledby="heading2" class="collapse multi-collapse1 " id="collapse1-2">
+                          <div class="card-body">
+
+                                            
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                in CPTCO history, 2023.
+                                
+              </div>
+            </div>
+        </div>
+                        
+                                                            
+                            
+                                
+                                
+                        <div class="card">
+            <div class="card-header" id="heading3">
+                <h3 class="m-0">
+                    <button aria-controls="collapse1-3" aria-expanded="false" class="btn btn-link" data-target="#collapse1-3" data-toggle="collapse">
+                              
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                  2nd Place
+                    </button>
+                </h3>
+            </div>
+                            <div aria-labelledby="heading3" class="collapse multi-collapse1 " id="collapse1-3">
+                          <div class="card-body">
+
+                                            
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                2023 National Collegiate Cyber Defense Competition
+                                
+              </div>
+            </div>
+        </div>
+                        
+                                                            
+                            
+                                
+                                
+                        <div class="card">
+            <div class="card-header" id="heading4">
+                <h3 class="m-0">
+                    <button aria-controls="collapse1-4" aria-expanded="false" class="btn btn-link" data-target="#collapse1-4" data-toggle="collapse">
+                              
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                  1st Place
+                    </button>
+                </h3>
+            </div>
+                            <div aria-labelledby="heading4" class="collapse multi-collapse1 " id="collapse1-4">
+                          <div class="card-body">
+
+                                            
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                                2023 National Centers of Academic Excellence, Western Region
+                                
+              </div>
+            </div>
+        </div>
+                        
+                                                            
+                    </div>   
+            </section>
+           
+	
+	
+ 
+         
+    
+
+        
+    </div>
+        <aside class="col-lg-3 col-md offset-md-4 offset-lg-0 offset-0 col-12">
+                                                    <div>
+                  
+                                
+                        
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                            <p><img alt="Screenshot of Making Swift of the Competition" class="" height="256" src="../img/24cpp-mag-spring-making-swift-of-the-competition.jpg" width="400"/></p>
+<p><a class="btn btn-primary" href="../pdf/24cpp-mag-summer-making-swift-work-of-the-competition.pdf">Download (PDF)</a></p>
+                
+                                </div>
+                        </aside>
+</div>
+</main>
+
+		
+    <div lang="en">
+
+
+                
+        
+               
+        
+            
+             
+       
+   
+   
+   
+      
+       
+        
+        
+    
+    
+                                 
+<style>
+     @media screen and (min-width: 992px) {
+    .mini-footer .footer__socials-buttons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.mini-footer .button1__transducer {
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+
+.mini-footer .button {
+	margin-top: 0;
+    padding: 8px 20px 8px 20px;
+
+}
+.mini-footer .footer-line {
+    border-top: thin solid #a4d65e;
+    margin-top: 39px;
+    padding-top: 15px;
+}
+ </style>
+<footer class="footer mini-footer">
+    <div class="footer__rip-wrapper">
+        <img class="footer__rip" alt="" src="/common/green-and-gold/assets/images/green-rip.svg" alt="Ripped green paper." />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+                <div class="footer__logo-wrapper">
+                    <a href="/" aria-label="CPP Logo">
+                        <img class="footer__logo" src="/common/green-and-gold/assets/logos/cpp_primary_1c_gold_rgb.png" alt="Cal Poly Pomona logo, building with a palm tree." />
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-4">
+                <div class="footer__socials">
+                    <div class="footer__socials-buttons">
+                        <a class="button button__secondary button1__transducer" href="/apply/">Apply</a>
+                        <a class="button button__secondary button1__transducer" href="https://maps.cpp.edu/">Maps</a>
+                        <a class="button button__secondary button1__transducer" href="/outreach/tours.shtml">Visit</a>
+                        <a class="button button__secondary button1__transducer" href="/contact.shtml">Contact Us</a>
+                    </div>
+                    <div class="footer__socials-icons">
+                        <a href="https://www.instagram.com/calpolypomona/" target="_blank">
+                            <img src="/common/green-and-gold/assets/icons/social/insta.svg" alt="Instagram opens a new window" />
+                        </a>
+                        <a href="https://www.linkedin.com/school/cal-poly-pomona/" target="_blank">
+                            <img src="/common/green-and-gold/assets/icons/social/li.svg" alt="LinkedIn opens a new window" />
+                        </a>
+                        <a href="https://www.youtube.com/user/calpolypomona" target="_blank">
+                            <img src="/common/green-and-gold/assets/icons/social/yt.svg" alt="YouTube opens a new window" />
+                        </a>
+                        <a href="https://www.facebook.com/calpolypomona" target="_blank">
+                            <img src="/common/green-and-gold/assets/icons/social/fb.svg" alt="Facebook opens a new window" />
+                        </a>
+                        <a href="https://twitter.com/calpolypomona" target="_blank">
+                            <img src="/common/green-and-gold/assets/icons/social/x.svg" alt="X opens a new window" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 footer-line">
+                <div class="footer__errata">
+                    <p class="footer__copyright" style="line-height: 1.8em">Copyright ©2025 California State Polytechnic University, Pomona.  All Rights Reserved 
+                        
+                        <br />A campus of 
+                        
+                        <a class="footer__errata-link" style="display: inline" href="https://www.calstate.edu/">The California State University</a>.
+                    
+                    </p>
+                    <div class="footer__errata-links">
+                        <a class="footer__errata-link" href="https://www.cpp.edu/website-feedback.shtml">Feedback</a>
+                        <a class="footer__errata-link" href="https://www.cpp.edu/privacy.shtml">Privacy</a>
+                        <a class="footer__errata-link" href="https://www.cpp.edu/accessibility.shtml">Accessibility</a>
+                        <a class="footer__errata-link" href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__gradient-bottom"></div>
+</footer>
+
+
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://www.cpp.edu/common/green-and-gold/assets/js/cpp-legacy.js" ></script>
+<script src="https://www.cpp.edu/common/2018/assets/js/tabs.js" ></script>
+<script src="/common/green-and-gold/assets/js/nav.js"></script>
+
+
+</div>
+    
+		
+		
+	</body>
+</html>
