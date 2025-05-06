@@ -76,7 +76,9 @@ def get_top_100_pages(pagerank_scores):
 #main program
 def main():
     #list your report files here
-    report_files = ['inverted_index_single_line.csv']
+    report_files = report_files = [
+    "report_project2_crawl_en.csv"
+]
 
     print("Reading crawl data...")
     link_graph, all_pages = load_links_from_reports(report_files)
