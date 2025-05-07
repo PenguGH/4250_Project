@@ -78,6 +78,14 @@ def main():
 
     for index, doc in enumerate(cosineVector[:numToPrint]):
         print(f'Document Name: {doc[0].split(".")[0]}, Cosine Similarity: {doc[1]}, Rank: {index + 1}')
+
+    # Output to CSV file
+    output_file = "retrieval_output.csv"
+    with open(output_file, 'w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Document Name", "Cosine Similarity", "Rank"])
+        for index, doc in enumerate(cosineVector[:numToPrint]):
+            writer.writerow([doc[0].split(".")[0], doc[1], index + 1])
     
 
 if __name__ == "__main__":
