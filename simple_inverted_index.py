@@ -3,7 +3,7 @@ import csv
 from collections import defaultdict
 
 def build_inverted_index_with_tf(folder_path):
-    inverted_index = defaultdict(lambda: defaultdict(int))  # term -> {doc: frequency}
+    inverted_index = defaultdict(lambda: defaultdict(int))  # term = {doc: frequency}
 
     for filename in os.listdir(folder_path):
         if filename.endswith(".txt"):
@@ -24,7 +24,7 @@ def export_index_to_csv_single_line(index, output_file):
             postings = [f"{doc}:{freq}" for doc, freq in sorted(doc_dict.items())]
             writer.writerow([term] + postings)
 
-# Example usage
+
 if __name__ == "__main__":
     folder_path = "stemmed_project2_crawl_en"  
     output_csv = "inverted_index_single_line.csv"

@@ -75,10 +75,10 @@ def crawl(seed_urls, allowed_domains, target_language, crawl_name, max_pages=500
     print(f"Crawl complete: {len(crawled)} pages. Graph saved to {csv_file}.")
     return link_graph
 
-# Example usage
+
 if __name__ == "__main__":
     seeds_en = ["https://www.cpp.edu"]
     allowed = ["cpp.edu"]
     graph_en = crawl(seeds_en, allowed, 'en', 'crawl_en')
-    # graph_en is now a dict of URL -> [list of outlink URLs]
+
 
