@@ -80,7 +80,7 @@ def main():
         print(f'Document Name: {doc[0].split(".")[0]}, Cosine Similarity: {doc[1]}, Rank: {index + 1}')
 
     # Output to CSV file
-    output_file = "retrieval_output.csv"
+    output_file = "retrieval_output_2.csv"
     with open(output_file, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(["Document Name", "Cosine Similarity", "Rank"])
